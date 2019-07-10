@@ -1,0 +1,9 @@
+{% extends "website/base.html" %}
+{% block content %}
+<div class = "content-section">
+	<div class="form-group">
+		<a class="btn btn-primary" href="{% url 'cleen-book' %}" role="button">Book Now!</a>
+		<a class="btn btn-primary" href="{% url 'register' %}" role="button">Sign Up!</a>
+	</div>
+</div>
+{% endblock content %}

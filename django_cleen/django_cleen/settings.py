@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'star_ratings',
+    'address',
 ]
 
 MIDDLEWARE = [
@@ -121,8 +123,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 LOGIN_REDIRECT_URL = "cleen-home"
 LOGIN_URL = "login"
+STAR_RATINGS_RERATE = False
+GOOGLE_API_KEY = 'AIzaSyAuh00vUs6xu4GF1sj51RzyTIIBxTMp6f0'
